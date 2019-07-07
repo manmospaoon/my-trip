@@ -1,0 +1,195 @@
+* { margin: 0; 
+    padding: 0;
+}
+
+/* menu */
+.top {
+  position: fixed;
+  justify-content: center;
+}
+i {
+  padding: 5px;
+}
+.top ul {
+  list-style: none;
+}
+
+.accordion-menu {
+  width: 100%;
+  max-width: 350px;
+  margin: 60px auto 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+.accordion-menu li.open .dropdownlink {
+  color: #000000;
+  text-align: center;
+}
+.accordion-menu li:last-child .dropdownlink {
+  border-bottom: 0;
+}
+.dropdownlink {
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  color: #212121;
+  position: relative;
+  transition: all 0.4s ease-out;
+}
+
+.submenuItems {
+  display: none;
+  background: #fff;
+  
+}
+
+.submenuItems a {
+  text-decoration: none;
+  display: block;
+  color: #727272;
+  padding: 12px;
+  transition: all 0.4s ease-out;
+  text-align: center;
+ 
+}
+
+/* section home画面 */
+svg {
+    display: block;
+    font: 4.5em 'Montserrat';
+    width: 100%;
+    padding-top: 20%;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 5%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #fff;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #808080;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #C0C0C0;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #fff;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #808080;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/*section*/
+section {
+  height: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.panel{
+  background-color: #333333;
+}
+.container h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.container {
+  width: 70%;
+  background: #fff;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+
+/*section image*/
+.move {
+	overflow:	hidden;
+	position:	relative;
+}
+.move .caption {
+	font-size: 130%;
+	color: #fff;
+	padding-top: 10px;
+	padding-left: 5%;
+}
+.move .mask {
+	width: 100%;
+	height:	50px;
+	position:	absolute;
+	top: -50px;	/* 枠の上に置いて表示しない */
+	left:	0;
+	background-color:	#333333;
+	transition:	all 0.4s ease;
+	opacity: 0.6;
+}
+.move:hover .mask {
+	top: 0px;	/* 下に降りてくるように見せる */
+}
+.move img {
+	transition:	all 0.4s ease;
+	transform: scale(1.1);
+}
+.move:hover img {
+	margin-top:	50px;			/* 画像の絵を下にずらす */
+	transform: scale(1.0);
+}
+
+
+
+.slick-slide {
+  color: #fff;
+  background: white;
+}
+
+.image img{
+    position: relative;
+    width: 95%;
+    margin: auto;
+    background-color: #000000;
+}
+
+@media screen and (max-width: 499px) { 
+    /*　画面サイズ 499pxまで適用　*/
+  .top {
+    display: none;
+  }
+  svg{
+    font: 2.5em 'Montserrat';
+    padding-top: 40%;
+  }
+  .image img{
+    width:100%;
+  }
+  .move .caption {
+  	font-size: 80%;
+  	padding-top: 5px;
+  }
+  .move .mask {
+  	height:			30px;
+  	top:			-30px;	/* 枠の上に置いて表示しない */
+  }
+  .move:hover img {
+    margin-top: 30px;
+  }
+}

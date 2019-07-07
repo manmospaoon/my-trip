@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="trip">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>trip photos</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" media="screen" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./jquery.scrollify.js"></script>
+    <script src="slick/slick.min.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <ul class="accordion-menu">
+        <li>
+          <div class="dropdownlink">Country
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <ul class="submenuItems">
+            <li id="thailand"><a href="#">Thailand</a></li>
+            <li id="taiwan"><a href="#">Taiwan</a></li>
+            <li id="malaysia"><a href="#">Malaysia</a></li>
+            <li id="australia"><a href="#">Australia</a></li>
+            <li id="newzealand"><a href="#">New Zealand</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div> 
+    
+	  <section id="home" class="panel sample" data-section-name="home">
+	    <svg>
+      	<symbol id="s-text">
+      		<text text-anchor="middle" x="50%" y="80%">My travel jornal</text>
+      	</symbol>
+      
+      	<g class = "g-ants">
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      	</g>
+      </svg>
+	  </section>
+	  
+	  <section id="thailand" class="panel sample1" data-section-name="thailand">
+	    <div class='container'>
+        <h3>Thailand</h3>
+        <div class='image'>
+          <div class="move">
+          	<img src="img/thailand/IMG_2103.jpg " alt="image1" />
+          	<div class="mask">
+          		<div class="caption">Wat Chai Wattanaram</div>
+          	</div>
+          </div>
+          <div class="move">
+          	<img src="img/thailand/IMG_2232.jpg " alt="image2" />
+          	<div class="mask">
+          		<div class="caption">Khaosan Road in Bangkok</div>
+          	</div>
+          </div>
+          <div class="move">
+          	<img src="img/thailand/IMG_2279.jpg " alt="image3" />
+          	<div class="mask">
+          		<div class="caption">Tuktuk  ～often used as a taxi in Thailand～</div>
+          	</div>
+          </div>
+          <div class="move">
+          	<img src="img/thailand/IMG_2108.jpg " alt="image4" />
+          	<div class="mask">
+          		<div class="caption">Wat Phra Mahathat</div>
+          	</div>
+          </div>
+        </div>
+      </div>
+	  </section>
+	  
+	  <section id="taiwan" class="panel sample2" data-section-name="taiwan">
+	    <div class='container'>
+        <h3>Taiwan</h3>
+        <div class='image'>
+          <div class="move">
+          	<img src="img/taiwan/IMG_2599.jpg" alt="image01"/>
+          	<div class="mask">
+          		<div class="caption">龍山寺</div>
+          	</div>
+          </div>
+          <div class="move">
+          	<img src="img/taiwan/IMG_2666.jpg" alt="image02">
+          	<div class="mask">
+          		<div class="caption">十份</div>
+          	</div>
+          </div>	
+          <div class="move">
+          	<img src="img/taiwan/IMG_2698.jpg" alt="image03">
+          	<div class="mask">
+          		<div class="caption">九份</div>
+          	</div>	
+          </div>	
+          <div class="move">
+          	<img src="img/taiwan/IMG_2738.jpg" alt="image04">
+          	<div class="mask">
+          		<div class="caption">九份</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/taiwan/IMG_2786.jpg" alt="image04">
+          	<div class="mask">
+          		<div class="caption">九份</div>
+          	</div>	
+          </div>
+        </div>
+      </div>
+	  </section>
+	  
+	  <section id="malaysia" class="panel sample3" data-section-name="malaysia">
+	    <div class='container'>
+        <h3>Malaysia</h3>
+        <div class='image'>
+          <div class="move">
+          	<img src="img/malaysia/P1090060.jpg" alt="image01">
+          	<div class="mask">
+          		<div class="caption">Petronas Twin Towers</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/malaysia/P1100081.jpg" alt="image02">
+          	<div class="mask">
+          		<div class="caption">a big lizard</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/malaysia/P1100125.jpg" alt="image03">
+          	<div class="mask">
+          		<div class="caption">It was a very beautiful sunset.</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/malaysia/P1120736.jpg" alt="image04">
+          	<div class="mask">
+          		<div class="caption">a monkey called ”proboscis monkey”</div>
+          	</div>	
+          </div>
+        </div>
+      </div>
+	  </section>
+	  
+	  <section id="australia" class="panel sample4" data-section-name="australia">
+	    <div class='container'>
+        <h3>Australia</h3>
+        <div class='image'>
+          <div class="move">
+          	<img src="img/australia/P6020765.jpg" alt="image01">
+          	<div class="mask">
+          		<div class="caption">Sydney Harbour Bridge</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/australia/PA281232.jpg" alt="image02">
+          	<div class="mask">
+          		<div class="caption">watching soccer game in Melbourne</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/australia/PB111283.jpg" alt="image03">
+          	<div class="mask">
+          		<div class="caption">HONDA!!!～He got a goal on that day.～</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/australia/PA171185.jpg" alt="image04">
+          	<div class="mask">
+          		<div class="caption">Matryoshka doll</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/australia/PA261229.jpg" alt="image05">
+          	<div class="mask">
+          		<div class="caption">painting the wall</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/australia/PB161300.jpg" alt="image06">
+          	<div class="mask">
+          		<div class="caption">a tram</div>
+          	</div>	
+          </div>
+        </div>
+      </div>
+	  </section>
+	  
+	  <section id="newzealand" class="panel sample5" data-section-name="newzealand">
+	    <div class='container'>
+        <h3>New Zealand</h3>
+        <div class='image'>
+          <div class="move">
+          	<img src="img/new_zealand/P6140828.jpg" alt="image01">
+          	<div class="mask">
+          		<div class="caption">Tailor made TEKAPO backpackers</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/new_zealand/P6140837.jpg" alt="image02">
+          	<div class="mask">
+          		<div class="caption">The lake tekapo</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/new_zealand//P6140858.jpg" alt="image03">
+          	<div class="mask">
+          		<div class="caption">Church of the Good Shepherd</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/new_zealand//P6140881.jpg" alt="image04">
+          	<div class="mask">
+          		<div class="caption">a starry night at the church</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/new_zealand//P6140887.jpg" alt="image05">
+          	<div class="mask">
+          		<div class="caption">a glittering starry night</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/new_zealand//P6150916.jpg" alt="image06">
+          	<div class="mask">
+          		<div class="caption">Hiking in Mount Cook national park</div>
+          	</div>	
+          </div>
+          <div class="move">
+          	<img src="img/new_zealand//P6170935.jpg" alt="image07">
+          	<div class="mask">
+          		<div class="caption">a tram in New zealand</div>
+          	</div>	
+          </div>
+        </div>
+      </div>
+	  </section>
+	  <script src="main.js"></script>
+  </body>
+</html>
